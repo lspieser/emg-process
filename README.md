@@ -11,8 +11,8 @@ If you are looking for code to process data from EMG recordings during experimen
 Below the list of available notebooks, in the order in which you should use them. To run notebook 1, you will need the file 's1.bdf' in the notebook folder. 
 To run notebook 2, you will need 's1.bdf' plus the output file from notebook 1 's1_detect_emg.csv'. To run notebook 3, you will need output file from notebook 2 's1_corrected_evts.csv'
 
-- Notebook 1-detect-emg.ipynb illustrates how to load datafile, preprocess EMG signal and run automatic detection of EMG bursts onsets and offsets. 
-Notebook 1bis_detect-emg-and-force.ipynb shows how to run detection of EMG and *force* onsets and offsets (no datafile available for illustration). Main steps are:
+- Notebook 1a-detect-emg.ipynb illustrates how to load datafile, preprocess EMG signal and run automatic detection of EMG bursts onsets and offsets. 
+Notebook 1b_detect-emg-and-force.ipynb shows how to run detection of EMG and *force* onsets and offsets (no datafile available for illustration). Main steps are:
 
     1. Set triggers/event markers variables
 
@@ -26,8 +26,8 @@ Notebook 1bis_detect-emg-and-force.ipynb shows how to run detection of EMG and *
 	
 	7. Run automatic detection of EMG brusts onsets and offsets
 
-- Notebook 2-viz-and-correct-emg.ipynb shows how to vizualise and correct burst onsets and offsets detected automatically. 
-Notebook 2bis-viz-and-correct-emg-and-force.ipynb shows how to vizualise and correct EMG and *force* onsets and offsets (no datafile available for illustration). Main steps are:
+- Notebook 2a-viz-and-correct-emg.ipynb shows how to vizualise and correct burst onsets and offsets detected automatically. 
+Notebook 2b-viz-and-correct-emg-and-force.ipynb shows how to vizualise and correct EMG and *force* onsets and offsets (no datafile available for illustration). Main steps are:
 
     1. Set data path and triggers/event markers variables
 	
