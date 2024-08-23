@@ -1438,7 +1438,8 @@ def get_channel_signal(dataframe, resp_chan_dict, data_signal_array, column_onse
     array : 
     
     """
-    t0 = utilsfunc.remove_list(dataframe[column_onset], keep_index=keep_index)
+    import numpy as np
+    t0 = utilsfunc.remove_list(dataframe[column_onset], empty=np.nan, keep_index=keep_index)
     try:
         # we assume emg happened on emg channel corresponding to the response
         channels = [resp_chan_dict[r] for r in dataframe[column_resp]]
@@ -1447,7 +1448,6 @@ def get_channel_signal(dataframe, resp_chan_dict, data_signal_array, column_onse
         raise 
     
     if remove_nan:
-        import numpy as np
         t0 = np.array(t0)
         if (np.isnan(t0)).any():
             nan_lines = np.where(np.isnan(t0))[0]
